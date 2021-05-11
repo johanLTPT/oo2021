@@ -1,0 +1,35 @@
+try{
+    //Koodiplokk, kus võib viga esineda
+}catch(Exception e){
+    //Kui viga juhtub, tee seda
+}
+
+
+try{
+    //Koodiplokk, kus võib viga esineda
+}catch(Exception e){
+    //Kui viga juhtub, tee seda
+}finally{
+    //Kõige lõpus tee seda, nt 
+    System.out.println("Test läbitud");
+}
+
+//Keerulisem näide, Konto
+class MyException extends Exception {
+
+}
+
+public void MyFunction() throws MyException{
+    if{
+    //tee midagi muud
+    }else{
+        throw new MyException();
+    }
+}
+
+try{
+    //Koodiplokk, kus võib viga esineda
+}catch(MyException e){
+    //Kui Minu viga juhtub, tee seda
+    e.printStackTrace();
+}
